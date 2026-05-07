@@ -1,0 +1,19 @@
+#:tombi schema.strict = false
+
+[global]
+flavor = "github"
+line_length = 88
+
+exclude = [
+  "LICENSE.md",
+  "CHANGELOG.md",
+]
+
+# Table formatting
+[MD060]
+enabled = true
+style = "aligned"
+
+# Inline html
+[MD033]
+disallowed-elements = ["github"]

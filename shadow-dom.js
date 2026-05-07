@@ -1,14 +1,14 @@
-/* Acrylic League of legends client theme */
-/* Adjusted by egirlcatnip from Sarah's acrylic theme */
+/* Mica League of legends client theme */
+/* Adjusted by egirlcatnip from Selene's acrylic theme */
 
-/* Version: 1.5 */
+/* Version: 2.0 */
 
 /* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
 
-/* this source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical    */
-/* Sarah's source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical */
+/* Emi's fork:      https://github.com/egirlcatnip/acrylic-league-theme      */
+/* Selene's source: https://github.com/HerXayah/league-launcher-theme/       */
 
-/* shadow-dom manipulation function */
+/* Code for the shadow-dom css */
 
 export function lobby_panel_css(element) {
     const root = element.shadowRoot;
@@ -20,8 +20,8 @@ export function lobby_panel_css(element) {
     `;
     root.appendChild(rootStyle);
 
-
-    const statusCardRoot = root.querySelector("lol-parties-status-card").shadowRoot;
+    const statusCardRoot =
+        root.querySelector("lol-parties-status-card").shadowRoot;
     const statusCardStyle = document.createElement("style");
     statusCardStyle.textContent = `
     .parties-status-card {
@@ -48,7 +48,8 @@ export function lobby_panel_css(element) {
         `;
     statusCardRoot.appendChild(statusCardStyle);
 
-    const gameInvitesRoot = root.querySelector("lol-parties-game-invites").shadowRoot;
+    const gameInvitesRoot =
+        root.querySelector("lol-parties-game-invites").shadowRoot;
     const gameInvitesStyle = document.createElement("style");
     gameInvitesStyle.textContent = `
         .parties-game-invite-heading-text{
@@ -60,8 +61,8 @@ export function lobby_panel_css(element) {
         `;
     gameInvitesRoot.appendChild(gameInvitesStyle);
 
-
-    const gameSearchRoot = root.querySelector("lol-parties-game-search").shadowRoot;
+    const gameSearchRoot =
+        root.querySelector("lol-parties-game-search").shadowRoot;
     const gameSearchStyle = document.createElement("style");
     gameSearchStyle.textContent = `
         .parties-game-search-divider{
@@ -92,7 +93,6 @@ export function lobby_panel_css(element) {
     // console.log("Panel css applied");
 }
 
-
 export function lobby_invite_css(element) {
     const root = element.shadowRoot;
     const rootStyle = document.createElement("style");
@@ -122,9 +122,6 @@ export function profile_banner_css(element) {
 
     console.log("Invite notification css applied");
 }
-
-
-
 
 // export function example_css(element) {
 //     const root = element.shadowRoot;

@@ -1,186 +1,174 @@
-/* Acrylic League of legends client theme */
-/* Adjusted by egirlcatnip from Sarah's acrylic theme */
+/* Mica League of legends client theme */
+/* Adjusted by egirlcatnip from Selene's acrylic theme */
 
-/* Version: 1.6 */
+/* Version: 2.0 */
 
 /* credits: @aimslut(discord), @egirlcatnip(discord), @unproductive(discord) */
 
-/* this source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical    */
-/* Sarah's source: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical */
-
+/* Emi's fork:      https://github.com/egirlcatnip/acrylic-league-theme      */
+/* Selene's source: https://github.com/HerXayah/league-launcher-theme/       */
 
 /* Settings section */
-
 :root {
-   /* Variables */
+  /* Variables */
 
-   /* Client colors: */
-   --dark-brown: #352a17;
-   --light-brown: #785a28;
-   --pale-brown: #c8aa6e;
-   --text: #e8dfcc;
-
+  /* Client colors: */
+  --dark-brown: #352a17;
+  --light-brown: #785a28;
+  --pale-brown: #c8aa6e;
+  --text: #e8dfcc;
 }
 
 /* Font:  */
 
 /* Find font you want on https://fonts.google.com/ and edit the following import accordingly: */
-@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono");
+@import url("https://fonts.googleapis.com/css?family=Atkinson-Hyperlegible-Next");
 
 :root {
-   --font-display: 'JetBrains Mono', sans-serif !important;
-   --font-body: 'JetBrains Mono', sans-serif !important;
+  --font-display: "Atkinson-Hyperlegible-Next", sans-serif !important;
+  --font-body: "Atkinson-Hyperlegible-Next", sans-serif !important;
 }
 
 /* Tweaks: */
 
 /* Show only Blue essence, hide riot-points  */
 .currency-rp-container-top-up-enabled {
-   display: none !important;
+  display: none !important;
 }
 
 /* Purple lobby buttons */
 .find-match-button-container,
 .role-selectors-container,
 .animation-button-icon {
-   filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
 }
-
 
 /* Lobby invite buttons, in place of unfilled banners */
 .v2-banner-placeholder {
-   display: none !important;
+  display: none !important;
 }
-
 
 /* Status indicator, under name, top right corner */
 .lower-details {
-   /* display: none !important; */
-   gap: 5px !important;
+  /* display: none !important; */
+  gap: 5px !important;
 }
 
 /* Game status icon, notificaton - downloads, offline or online, disabled champs.. , next to top play button*/
 .navigation-status-ticker,
 .lol-uikit-flyout-frame.flyout:not(lol-social-chat-window) {
-   display: none !important
+  display: none !important;
 }
-
 
 /* Hover mouse to show */
 
 /* Chat, missions, league-voice buttons and version info, bottom right */
 .alpha-version-panel {
-   opacity: 0 !important;
-   transition: 0.2s !important;
+  opacity: 0 !important;
+  transition: 0.2s !important;
 }
 
 .alpha-version-panel:hover {
-   opacity: 1 !important;
-   transition: 0.2s !important;
+  opacity: 1 !important;
+  transition: 0.2s !important;
 }
 
 /* Teamfight Tactics button, top of screen */
 .menu_item_navbar_tft {
-   opacity: 0 !important;
-   transition: 0.2s !important;
+  opacity: 0 !important;
+  transition: 0.2s !important;
 }
 
 .menu_item_navbar_tft:hover {
-   opacity: 1 !important;
-   transition: 0.2s !important;
+  opacity: 1 !important;
+  transition: 0.2s !important;
 }
 
 /* Party invite menu, next to play button */
 .invite-info-panel-container {
-   opacity: 0 !important;
-   transition: 0.2s !important;
+  opacity: 0 !important;
+  transition: 0.2s !important;
 }
 
 .invite-info-panel-container:hover {
-   opacity: 1 !important;
-   transition: 0.2s !important;
+  opacity: 1 !important;
+  transition: 0.2s !important;
 }
 
 /* Leven xp ring, user icon, top right corner */
 .xp-ring {
-   opacity: 0 !important;
-   transition: 0.2s !important;
+  opacity: 0 !important;
+  transition: 0.2s !important;
 }
 
-.identity-icon:hover>.summoner-level-icon>.xp-ring {
-   opacity: 1 !important;
-   transition: 0.2s !important;
+.identity-icon:hover > .summoner-level-icon > .xp-ring {
+  opacity: 1 !important;
+  transition: 0.2s !important;
 }
 
 /* Notifications button, under user icon, top right corner */
 .notifications-button {
-   opacity: 0 !important;
-   transition: 0.2s !important;
+  opacity: 0 !important;
+  transition: 0.2s !important;
 }
 
 .notifications-button:hover {
-   opacity: 1 !important;
-   transition: 0.2s !important;
+  opacity: 1 !important;
+  transition: 0.2s !important;
 }
 
 /* Status, under user icon, top right corner */
-.lower-details>.status,
-.lower-details>lol-social-availability-hitbox {
-   opacity: 0 !important;
-   transition: 0.2s !important;
+.lower-details > .status,
+.lower-details > lol-social-availability-hitbox {
+  opacity: 0 !important;
+  transition: 0.2s !important;
 }
 
-.lower-details:hover>.status,
-.lower-details:hover>lol-social-availability-hitbox {
-   opacity: 1 !important;
-   transition: 0.2s !important;
+.lower-details:hover > .status,
+.lower-details:hover > lol-social-availability-hitbox {
+  opacity: 1 !important;
+  transition: 0.2s !important;
 }
 
 /* Chat input */
 
-
 /* Social panel (friends-list) menu buttons, leftmost panel */
-.lol-social-actions-bar>.actions-bar>buttons:not(:first-child) {
-   opacity: 0;
-   transition: 0.2s !important;
+.lol-social-actions-bar > .actions-bar > buttons:not(:first-child) {
+  opacity: 0;
+  transition: 0.2s !important;
 }
 
-.lol-social-actions-bar:hover>.actions-bar>buttons:not(:first-child) {
-   opacity: 1;
-   transition: 0.2s !important;
+.lol-social-actions-bar:hover > .actions-bar > buttons:not(:first-child) {
+  opacity: 1;
+  transition: 0.2s !important;
 }
 
 /* Level xp ring, top right corner, over profile picture */
 .summoner-xp-radial-container {
-   opacity: 0;
-   transition: 0.2s !important;
+  opacity: 0;
+  transition: 0.2s !important;
 }
 
 .summoner-xp-radial-container:hover {
-   opacity: 1;
-   transition: 0.2s !important;
+  opacity: 1;
+  transition: 0.2s !important;
 }
 
 /* Profile background change button, profile page */
 .style-profile-skin-picker-button {
-   opacity: 0;
-   transition: 0.2s !important;
+  opacity: 0;
+  transition: 0.2s !important;
 }
 
 .style-profile-skin-picker-button:hover {
-   opacity: 1;
-   transition: 0.2s !important;
+  opacity: 1;
+  transition: 0.2s !important;
 }
 
 /* End of hover mouse section  */
 
-
 /* End of tweaks section */
 /* End of settings section */
-
-
-
-
 
 /* General theming section */
 
@@ -190,42 +178,35 @@
 .rcp-fe-lol-home-loading-spinner,
 .style-profile-loading-spinner,
 .spinner {
-   display: none !important;
-   background: none !important;
+  display: none !important;
+  background: none !important;
 }
-
 
 /* Level ring */
 .summoner-level-ring {
-   display: none !important;
+  display: none !important;
 }
 
 .bottom.unfilled.xp-ring {
-   background: var(--dark-brown);
+  background: var(--dark-brown);
 }
 
 .middle.filled.xp-ring {
-   background: var(--light-brown);
+  background: var(--light-brown);
 }
 
 .summoner-level {
-   color: var(--text) !important;
-   background-image: none !important;
-   bottom: -8px;
+  color: var(--text) !important;
+  background-image: none !important;
+  bottom: -8px;
 }
-
-
 
 /* Social panel */
 
 /* List arrows */
 .arrow-container {
-   display: none !important;
+  display: none !important;
 }
-
-
-
-
 
 /* (This needs to get cleaned up and organized properly) */
 .clash-root-background-landing,
@@ -240,7 +221,7 @@
 .clash-root-background,
 .clash-root-background-landing,
 .store-backdrop,
-.challenges-collection-component>.background,
+.challenges-collection-component > .background,
 .loot-backdrop .lol-uikit-video-content,
 .rcp-fe-lol-event-shop-application,
 .champ-select-bg-darken,
@@ -278,63 +259,62 @@
 .event-shop-progression-track,
 .event-shop-main-view-progression-minimize-button-trapezoid,
 .event-shop-main-view-progression-minimize-button-trapezoid-border {
-   background-color: transparent !important;
-   background: transparent !important;
-   backdrop-filter: none !important;
-   filter: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  filter: none !important;
 }
 
 body,
 html {
-   background-color: transparent !important;
-   background: transparent !important;
-   backdrop-filter: none !important;
-   filter: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  filter: none !important;
 }
 
 .cdp-progression-header {
-   border: none !important;
+  border: none !important;
 }
 
 .cdp-backdrop-img {
-   opacity: 0.4 !important;
-   position: unset !important;
-
+  opacity: 0.4 !important;
+  position: unset !important;
 }
 
 .group-separator {
-   display: none !important;
-   border: none !important;
+  display: none !important;
+  border: none !important;
 }
 
 .lol-loading-screen-lol-icon,
 .lol-loading-screen-container {
-   margin: 0 !important;
+  margin: 0 !important;
 }
 
 .navigation-root-component {
-   border-bottom: none !important;
+  border-bottom: none !important;
 }
 
 #ember6325,
 .parties-background {
-   display: none !important;
+  display: none !important;
 }
 
 .owned-filter {
-   border: none !important;
+  border: none !important;
 }
 
 .lobby-header-overlay,
 .loading-content,
 .bottom-gradient,
 .event-shop-page-header-vertical-divider {
-   display: none !important;
+  display: none !important;
 }
 
 .navbar-blur {
-   background: transparent !important;
-   width: 0 !important;
+  background: transparent !important;
+  width: 0 !important;
 }
 
 .event-shop-category-nav-bar,
@@ -342,73 +322,67 @@ html {
 .event-shop-reward-track-wrapper,
 .custom-invite-header,
 .parties-invite-info-panel-body {
-   border: none !important;
-   background: none !important;
+  border: none !important;
+  background: none !important;
 }
 
 #background-ambient {
-   display: none !important;
+  display: none !important;
 }
 
 .v2-parties-invite-info-panel,
 .parties-invite-info-panel {
-   background: none !important;
+  background: none !important;
 }
 
 .parties-invite-info-panel {
-   border-radius: 10px;
+  border-radius: 10px;
 }
 
 #ember10585 {
-   top: 330px !important;
+  top: 330px !important;
 }
-
 
 .lol-parties-status-card {
-   display: none !important;
+  display: none !important;
 }
-
 
 .lol-uikit-flyout-frame {
-   display: none !important;
+  display: none !important;
 }
 
-
 .lol-uikit-contextual-notification-targeted-layer {
-   display: none !important;
+  display: none !important;
 }
 
 .parties-game-section {
-   display: none !important;
-   opacity: 0 !important;
-
+  display: none !important;
+  opacity: 0 !important;
 }
 
 .parties-footer-warning {
-   display: none !important;
+  display: none !important;
 }
 
-
 .selection-modal .selection-modal-wrapper {
-   background: none !important;
+  background: none !important;
 }
 
 .parties-game-search-divider {
-   display: none !important;
-   background: none !important;
+  display: none !important;
+  background: none !important;
 }
 
 .point-eligibility-icon {
-   display: none !important;
+  display: none !important;
 }
 
 .chat-box {
-   background: none !important;
+  background: none !important;
 }
 
-
 .horizontal-options-showcase-background {
-   background: none !important;
+  background: none !important;
 }
 
 /*
@@ -417,400 +391,402 @@ html {
 } */
 
 .play-button-frame {
-   background: none !important;
+  background: none !important;
 }
 
 .store-loading {
-   display: none !important;
+  display: none !important;
 }
 
 .right-nav-vertical-rule {
-   display: none !important;
+  display: none !important;
 }
 
 .app-controls-support {
-   display: none !important;
+  display: none !important;
 }
 
 .wallet-and-badges {
-   margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 
 .main-navigation-menu-item:last-of-type {
-   margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 
 .lol-uikit-layer-manager-wrapper {
-   display: none !important;
+  display: none !important;
 }
 
 .lol-uikit-navigation-item {
-   cursor: pointer !important;
+  cursor: pointer !important;
 }
 
 .rcp-fe-lol-home-loading-spinner,
 .style-profile-loading-spinner,
 .spinner {
-   display: none !important;
-   background: none !important;
+  display: none !important;
+  background: none !important;
 }
 
 .event-shop-index-header,
 .event-shop-progression {
-   box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .event-shop-token-shop-header,
 .event-shop-page-header,
 .event-shop-progression-info {
-   box-shadow: none !important;
-   border: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .lobby-header-overlay,
 .loading-content,
 .bottom-gradient,
 .event-shop-page-header-vertical-divider {
-   display: none !important;
+  display: none !important;
 }
 
 .lol-loading-screen-default-state {
-   background: transparent !important;
+  background: transparent !important;
 }
 
 .lol-loading-screen-container {
-   background: transparent !important;
-   backdrop-filter: blur(120px) brightness(20%) !important;
-   z-index: 2;
-   /* Client loading screen with logo */
+  background: transparent !important;
+  backdrop-filter: blur(120px) brightness(20%) !important;
+  z-index: 2;
+  /* Client loading screen with logo */
 }
 
 .clash-root-action-timeline-background-gradient {
-   display: none !important;
+  display: none !important;
 }
 
 .style-profile-emblem-wrapper {
-   background: none !important;
+  background: none !important;
 }
 
 .style-profile-backdrop-container,
 .clash-parallax-background,
 .clash-tab-bracket-background {
-   -webkit-mask: linear-gradient(90deg, white 60%, transparent);
-   /* -webkit-mask: radial-gradient(white, transparent 70%); */
-   mask: radial-gradient(white, transparent 70%);
+  -webkit-mask: linear-gradient(0deg, transparent 0%, white 5%, white 100%);
+  /* -webkit-mask: radial-gradient(white, transparent 70%); */
+  mask: radial-gradient(0deg, transparent 0%, white 5%, white 100%);
 }
 
 .event-shop-token-shop-card-available:hover {
-   filter: unset !important;
+  filter: unset !important;
 }
 
 .event-shop-token-shop-card-available:hover:after {
-   background: none !important;
+  background: none !important;
 }
 
 .parties-game-search-divider {
-   display: none !important;
+  display: none !important;
 }
 
 .party-members-container,
 .style-profile-summoner-info-component {
-   -webkit-mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
-   mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
-
+  -webkit-mask: linear-gradient(180deg, transparent 0%, white 5%, white 100%);
+  mask: linear-gradient(180deg, transparent 0%, white 5%, white 100%);
 }
 
 .lol-leagues-right-container {
-   overflow: unset !important;
+  overflow: unset !important;
 }
 
 .ranked-banner-component {
-   height: 120% !important;
-   -webkit-mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
-   mask: linear-gradient(180deg, transparent 10%, white 50%, white 100%);
-
+  height: 120% !important;
+  -webkit-mask: linear-gradient(180deg, transparent 0%, white 5%, white 100%);
+  mask: linear-gradient(180deg, transparent 0%, white 5%, white 100%);
 }
 
-.lol-leagues-list>div {
-   overflow: overlay !important;
+.lol-leagues-list > div {
+  overflow: overlay !important;
 }
-
 
 .screen-root.active {
-   -webkit-mask: linear-gradient(180deg, transparent 0%, white 30%, white 100%);
-   mask: linear-gradient(90deg, transparent 0%, white 10%, white 100%);
-
+  -webkit-mask: linear-gradient(180deg, transparent 0%, white 30%, white 100%);
+  mask: linear-gradient(90deg, transparent 0%, white 10%, white 100%);
 }
 
 .rcp-fe-viewport-persistent {
-   -webkit-mask: linear-gradient(270deg, transparent 0%, white 20%, white 100%);
-   mask: linear-gradient(270deg, transparent 0%, white 20%, white 100%);
-
+  -webkit-mask: linear-gradient(270deg, transparent 0%, white 20%, white 100%);
+  mask: linear-gradient(270deg, transparent 0%, white 20%, white 100%);
 }
 
 /* Token borders */
 .achievement-token-container {
-   background: none !important;
+  background: none !important;
 }
 
 .postgame-header-section {
-   background: none !important;
+  background: none !important;
 }
 
 .postgame-header-container {
-   border-bottom: none !important;
+  border-bottom: none !important;
 }
 
-.career-postgame-progression-component div.postgame-champion-background-wrapper>div {
-   -webkit-mask: none !important;
-   mask: none !important;
+.career-postgame-progression-component
+  div.postgame-champion-background-wrapper
+  > div {
+  -webkit-mask: none !important;
+  mask: none !important;
 }
 
-.career-postgame-progression-component>div.postgame-champion-background-wrapper>div>img {
-   -webkit-mask: radial-gradient(white, transparent 70%);
-   mask: radial-gradient(white, transparent 70%);
-   position: unset !important;
-
+.career-postgame-progression-component
+  > div.postgame-champion-background-wrapper
+  > div > img {
+  -webkit-mask: radial-gradient(0deg, transparent 0%, white 5%, white 100%);
+  mask: radial-gradient(0deg, transparent 0%, white 5%, white 100%);
+  position: unset !important;
 }
 
 .postgame-root-component,
 .postgame-header-section.progression-tab {
-   backdrop-filter: none !important;
+  backdrop-filter: none !important;
 }
 
 .challenge-container {
-   display: none !important;
+  display: none !important;
 }
 
 .mastery-progression-container,
 .challenge-progression-top {
-   margin-left: 676px;
+  margin-left: 676px;
 }
 
 .add-perks-page-button-container {
-   display: none !important;
+  display: none !important;
 }
 
 .scoreboard-row-player-controls-container {
-   background: none !important;
+  background: none !important;
 }
 
 .honor-postgame-notification-contents {
-   background: none !important;
+  background: none !important;
 }
 
 .player-history-stats-minions {
-   width: 50px !important;
+  width: 50px !important;
 }
 
 .player-history-stats-kills {
-   width: unset !important;
+  width: unset !important;
 }
 
 .custom-game-tournament-code-container {
-   display: none !important;
+  display: none !important;
 }
 
 .event-shop-xp-vertical-divider {
-   display: none !important;
+  display: none !important;
 }
 
 .event-shop-progression-track {
-   border: none !important;
+  border: none !important;
 }
 
 .loot-to-store-button {
-   display: none !important;
+  display: none !important;
 }
 
 .lol-loading-screen-status-container {
-   display: none !important;
+  display: none !important;
 }
 
 lol-social-availability-hitbox {
-   margin: 5px 5px 0 0 !important;
+  margin: 5px 5px 0 0 !important;
 }
 
 .style-profile-masked-image {
-   -webkit-mask: none !important;
-   mask: none !important;
+  -webkit-mask: none !important;
+  mask: none !important;
 }
 
 .unfilled.xp-ring {
-   display: none !important;
+  display: none !important;
 }
 
 .xp-ring {
-   left: 3.95px !important;
-   top: 3.9px !important;
-   width: 50px !important;
-   height: 50px !important;
+  left: 3.95px !important;
+  top: 3.9px !important;
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .stat-mod-perk-selector .perk-selector-text .perk-selector-description {
-   white-space: unset !important;
+  white-space: unset !important;
 }
 
-lol-uikit-full-page-modal>span>div {
-   border-right: 2px solid #463714;
-   height: 100%;
-   width: 100%
+lol-uikit-full-page-modal > span > div {
+  border-right: 2px solid #463714;
+  height: 100%;
+  width: 100%;
 }
 
-.collection-spell-container>div>video {
-   -webkit-mask: linear-gradient(90deg, white 60%, transparent);
-   mask: linear-gradient(90deg, white 60%, transparent);
+.collection-spell-container > div > video {
+  -webkit-mask: linear-gradient(90deg, transparent 0%, white 5%, white 100%);
+  mask: linear-gradient(90deg, transparent 0%, white 5%, white 100%);
 }
 
 .player-history-items {
-   width: unset !important;
+  width: unset !important;
 }
 
 .smoke-background-container {
-   display: none !important;
+  display: none !important;
 }
 
 .ranked-rewards-component {
-   background: none !important;
-   border: none !important;
+  background: none !important;
+  border: none !important;
 }
 
-.pick-phase>.champion-grid>.champions>.champion-container>div>div {
-   overflow: hidden !important;
+.pick-phase > .champion-grid > .champions > .champion-container > div > div {
+  overflow: hidden !important;
 }
 
-.timer-container>.timer {
-   margin-top: 10px !important;
+.timer-container > .timer {
+  margin-top: 10px !important;
 }
 
-.lol-uikit-layer-manager-wrapper>.tooltip {
-   display: none !important;
+.lol-uikit-layer-manager-wrapper > .tooltip {
+  display: none !important;
 }
 
 .lobby-header-vertical-line {
-   display: none !important;
+  display: none !important;
 }
 
 .style-profile-skin-picker-button {
-   top: 82px !important;
+  top: 82px !important;
 }
 
 .style-profile-search-input-component {
-   display: none;
+  display: none;
 }
 
 .lobby-banner {
-   height: 600px;
+  height: 600px;
 }
 
 .clash-social-persistent {
-   background: none !important;
+  background: none !important;
 }
 
-.clash-social-persistent-content>img {
-   display: none !important;
+.clash-social-persistent-content > img {
+  display: none !important;
 }
 
 .clash-roster-details {
-   background: none !important;
+  background: none !important;
 }
 
 .clash-roster-team-logo-background {
-   -webkit-mask: radial-gradient(white, transparent 70%);
-   mask: radial-gradient(white, transparent 70%);
+  -webkit-mask: radial-gradient(0deg, transparent 0%, white 5%, white 100%);
+  mask: radial-gradient(0deg, transparent 0%, white 5%, white 100%);
 }
 
 .player-name__clipboard-copy-icon {
-   display: none;
+  display: none;
 }
 
-.background-vignette-container.champ-select-bg>img {
-   -webkit-mask: radial-gradient(white, transparent 70%);
-   mask: radial-gradient(white, transparent 70%);
+.background-vignette-container.champ-select-bg > img {
+  -webkit-mask: radial-gradient(0deg, transparent 0%, white 5%, white 100%);
+  mask: radial-gradient(0deg, transparent 0%, white 5%, white 100%);
 }
 
 .lol-social-sidebar .alpha-version-panel {
-   border: none !important;
+  border: none !important;
 }
 
 .lol-premade-voice-button.button-disabled {
-   display: none !important;
+  display: none !important;
 }
 
-lol-uikit-full-page-modal>span>div {
-   border: none !important;
+lol-uikit-full-page-modal > span > div {
+  border: none !important;
 }
 
 /* Inventory Champion view */
 .champion-thumbnail {
-   border: none !important;
-   opacity: 1 !important;
-   z-index: 1 !important;
-   height: 160px !important;
+  border: none !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+  height: 160px !important;
 }
 
 .champion-thumbnail:hover {
-   height: 100% !important;
-   transition: all ease-in-out;
-   filter: saturate(1.2);
+  height: 100% !important;
+  transition: all ease-in-out;
+  filter: saturate(1.2);
 }
 
 .champion-image-container {
-   height: 220px !important;
-   text-align: center !important;
-   transition: 0.2s !important;
+  height: 220px !important;
+  text-align: center !important;
+  transition: 0.2s !important;
 }
 
 .champion-image {
-   height: 100% !important;
-   border-radius: 4px;
+  height: 100% !important;
+  border-radius: 4px;
 }
 
-
 .collections-application {
-   text-align: -webkit-center !important;
+  text-align: -webkit-center !important;
 }
 
 .champion-name-container {
-   display: none !important;
+  display: none !important;
 }
 
 .champion-mastery-info {
-   display: block !important;
-   background: none !important;
-   border-top: none !important;
-   position: relative !important;
-   top: -221px !important;
-   left: 12px !important;
+  display: block !important;
+  background: none !important;
+  border-top: none !important;
+  position: relative !important;
+  top: -221px !important;
+  left: 12px !important;
 }
 
 .champion-mastery-badge-container > img {
-   width: 40px !important;
-   height: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .eternals-description-container {
-   display: none !important;
+  display: none !important;
 }
 
 .info-badge-wrapper {
-   top: 2px !important;
-   left: 84px !important;
+  top: 2px !important;
+  left: 84px !important;
 }
 
 .inventory-item-image-container {
-   background: none !important;
+  background: none !important;
 }
 
 .clash-trophy-border-wrapper, .clash-banner-border-wrapper {
-   display:none;
+  display: none;
 }
 .deep-links-promo {
-   display: none !important 
+  display: none !important;
 }
 
+.clash-arurf-intro-modal {
+  display: none !important;
+}
 
-
-
+.event-hub-season-pass-root-extended {
+  -webkit-mask: linear-gradient(270deg, transparent 0%, white 5%, white 100%);
+  mask: linear-gradient(270deg, transparent 0%, white 5%, white 100%);
+}
 
 /* End of general theming section */
